@@ -1,0 +1,27 @@
+Statement) Initialize an array with few numbers and iterate over all values and find the total sum.
+
+Sample 1:
+Input      Output
+10           75
+15
+20
+30
+
+--------------------------------------------
+SOLUTION = const numbers = [10, 15, 20, 30];
+let sum = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+  sum += numbers[i];
+}
+
+console.log(sum);
+
+--------------------------------------------
+Sample Input
+10 
+15
+20
+30
+Your Output
+75
