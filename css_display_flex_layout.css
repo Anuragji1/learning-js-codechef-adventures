@@ -1,0 +1,36 @@
+Statement) You can uncomment the line in the CSS file and see the effect!
+
+display: flex
+By using Flexbox properties, we can easily adjust the layout based on different screen sizes or requirements. For example, we can change the direction of the flex items using flex-direction, or modify the alignment and spacing using properties like justify-content and align-items.
+
+------------------------------------------------------------------------------
+SOLUTION = style.css= .container {
+  display: flex;
+}
+
+.sidebar {
+  flex-basis: 200px; /* Set a fixed width for the sidebar */
+  background-color: lightgray;
+}
+
+.main {
+  flex-grow: 1; /* Allow the main content to grow and occupy remaining space */
+  background-color: white;
+}
+
+-------------
+index.html= <!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Flexbox Layout</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <div class="sidebar">Sidebar</div>
+      <div class="main">Main Content</div>
+    </div>
+  </body>
+</html>
+
+------------
