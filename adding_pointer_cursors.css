@@ -1,0 +1,64 @@
+Statement) Now it's time for you to practice applying the pointer cursor to elements within a web page.
+
+Add the cursor: pointer; property to the .box class to change the cursor style to a pointer when hovering over the boxes.
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: lightgray;
+  /* Add a cursor pointer */
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------
+SOLUTION = style.css= .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: lightgray;
+  
+  /* Solution to adding a pointer cursor */
+  cursor: pointer;
+}
+
+--------------------------------------------
+index.html= <!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 4</div>
+    </div>
+  </body>
+</html>
+
+---------------------------------------------
+Explanation:
+
+The line cursor: pointer; has been added within the .box class.
+This ensures that whenever a user hovers over any element with the class "box", their cursor will change from the default arrow to a pointer icon.
+This visually indicates to the user that the boxes are interactive elements, even though they might not technically be clickable yet.
+It's a common practice to use pointer cursors for elements that will eventually be clickable or trigger actions, providing a clear visual cue to the user.
