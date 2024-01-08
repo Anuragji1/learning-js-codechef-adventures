@@ -1,0 +1,62 @@
+Statement) Your task is to modify the provided code template using Flexbox concepts to fill up the available space within the container. Follow these instructions:
+
+Apply Flexbox properties to the .container class so that the boxes are distributed evenly horizontally.
+Adjust the Flexbox properties of the .box class to make each box fill up the available vertical space evenly.
+Add a margin of 10px to the .box class.
+
+.container {
+  /* Add flexbox property to display */
+  height: 300px;
+  border: 1px solid black;
+}
+
+.box {
+  /* Adjust the Flexbox properties to make each box fill up the available vertical space evenly. */
+  
+  /* Add margin of 10px */
+  text-align: center;
+  background-color: lightgray;
+}
+
+
+-----------------------------------------
+SOLUTION =  style.css= .container {
+  /* Solution for adding flex type display */
+  display: flex;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.box {
+  /* Solution for making each box fill the available vertical space evenly */
+  flex-grow: 1;
+  
+  /* Solution for adding the margin */
+  margin: 10px;
+  text-align: center;
+  background-color: lightgray;
+}
+--
+Explanation of changes:
+
+.container { display: flex; }: This turns the container into a flex container, enabling Flexbox layout for its child elements (the boxes).
+.container { justify-content: space-between; }: This distributes the boxes evenly along the main axis (horizontally) with equal spacing between them.
+.box { flex: 1; }: This shorthand property combines flex-grow: 1 and flex-basis: 0. It allows each box to grow and fill up the available vertical space within the container, ensuring they share the height equally.
+.box { margin: 10px; }: This adds a 10px margin around each box to create spacing between them.
+
+-----------
+index.html = <!DOCTYPE html>
+<html>
+  <head>
+    <title>FlexBox Task</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+      <div class="box box4">Box 4</div>
+    </div>
+  </body>
+</html>
+------------
