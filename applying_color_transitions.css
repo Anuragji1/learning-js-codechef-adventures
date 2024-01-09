@@ -1,0 +1,60 @@
+Problem Statement) Now it's time to apply color transitions to elements within a practical example. Follow these instructions:
+
+Add a lightgrey as the initial background color for each box.
+Apply a color transition to the .box class using the transition property. Experiment with different durations and timing functions to achieve the desired effect.
+Customize the hover state of the boxes to change their background color, triggering the color transition.
+
+-------------------------------------------------------------------------------------------------------------
+SOLUTION:- style.css= .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: lightgray; /* Added initial background color */
+  transition: background-color 0.5s ease; /* Added color transition */
+}
+
+.box:hover {
+  background-color: skyblue; /* Added hover background color */
+}
+
+------------
+index.html= <!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 4</div>
+    </div>
+  </body>
+</html>
+
+------------
+Explanation:
+
+Initial Background Color:
+
+background-color: lightgray; sets the initial background color of the boxes to lightgray.
+Color Transition:
+
+transition: background-color 0.5s ease; applies a transition to the background-color property of the boxes.
+It specifies a duration of 0.5 seconds for the transition to occur.
+The ease timing function creates a smooth transition, starting slowly, accelerating, and then slowing down at the end.
+Hover State:
+
+.box:hover { background-color: skyblue; } changes the background color of the boxes to skyblue when they are hovered over.
+This triggers the color transition, smoothly animating the color change from lightgray to skyblue over 0.5 seconds.
