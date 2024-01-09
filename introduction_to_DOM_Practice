@@ -1,0 +1,12 @@
+Statement) Check out the HTML code in the file index.html.
+You want to modify the paragraph - 'Ideal for beginners and intermediate learners' and replace it with 'Practical courses across the software development spectrum' using the syntax taught above.
+
+Go ahead and code it out!
+
+Don't forget to update the correct element id to modify the paragraph.
+
+----------------------------------------------------------------------
+SOLUTION = // Solution as follows
+
+document.getElementById('paragraph1').innerHTML = 'Practical courses across the software development spectrum';
+--------------------
